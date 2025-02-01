@@ -1,0 +1,30 @@
+.profile-header {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 2rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    margin: 2rem 0;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: var(--accent-purple);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.stat-card {
+    background: var(--background);
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+}

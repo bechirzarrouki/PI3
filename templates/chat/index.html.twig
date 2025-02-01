@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Chat - Purple Social{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('styles/pages/chat.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="chat-container">
+    <div class="chat-sidebar">
+        <div class="conversation active">
+            <div class="user-avatar"></div>
+            <div class="conversation-info">
+                <h4>AI Art Team</h4>
+                <p>Let's finalize the prototype...</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="chat-main">
+        <div class="message received">
+            <p>Can we schedule a meeting tomorrow?</p>
+        </div>
+        <div class="message-input">
+            <input type="text" placeholder="Type your message...">
+            <button class="purple-btn">Send</button>
+        </div>
+    </div>
+</div>
+{% endblock %}

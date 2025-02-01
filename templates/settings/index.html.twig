@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Settings - Purple Social{% endblock %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('styles/pages/settings.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="settings-container">
+    <aside class="settings-sidebar">
+        <h3>Account Settings</h3>
+        <nav>
+            <a href="#" class="active">Profile</a>
+            <a href="#">Security</a>
+            <a href="#">Notifications</a>
+            <a href="#">Preferences</a>
+        </nav>
+    </aside>
+
+    <main class="settings-main">
+        <h2>Profile Settings</h2>
+        <form class="settings-form">
+            <div class="form-group">
+                <label>Display Name</label>
+                <input type="text" value="Edward Evans">
+            </div>
+            <button class="purple-btn">Save Changes</button>
+        </form>
+    </main>
+</div>
+{% endblock %}
